@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V Auto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#">
+                <h1>V Auto</h1>
+            </a>
+            <div class="botao-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        Novos
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">BMW</a>
+                            </li>
+                            <li>
+                                <a href="#">Toyota</a>
+                            </li>
+                            <li>
+                                <a href="#">Peugeot</a>
+                            </li>
+                            <li>
+                                <a href="#">Audi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Estoque
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">BMW</a>
+                            </li>
+                            <li>
+                                <a href="#">Toyota</a>
+                            </li>
+                            <li>
+                                <a href="#">Peugeot</a>
+                            </li>
+                            <li>
+                                <a href="#">Audi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>    
+                        Peças e acessórios
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">BMW</a>
+                            </li>
+                            <li>
+                                <a href="#">Toyota</a>
+                            </li>
+                            <li>
+                                <a href="#">Peugeot</a>
+                            </li>
+                            <li>
+                                <a href="#">Audi</a>
+                            </li>
+                        </ul>
+                    </li>
+                                        <li>Sobre nós
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">Quem somos</a>
+                            </li>
+                            <li>
+                                <a href="#">Contato</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="sobre container">
+        <h2>Sobre nós</h2>
+        <article>
+            <img src="./img/loja.png" title="Interior da concessionária">
+        <div>
+            <h3>Quem somos</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi accusantium perferendis debitis est fugiat dignissimos, neque impedit quibusdam corrupti mollitia. Obcaecati sequi consequuntur sunt cum odio amet culpa quas natus!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quidem nostrum recusandae officia consectetur non, autem id consequatur similique laudantium cumque totam reiciendis, esse iste? Voluptatum eos beatae magnam quis?
+            </p>
+        </div>
+    </article>
+    </section>
+    <section class="novos container">
+        <h2>Novos</h2>
+        <ul class="produtos">
+            <li>
+                <img src="./img/bmw.jpg" title="Carro BMW">
+                <h4>BMW iX</h4>
+                <p>
+                    Veículo elétrico, sport, 4 portas.
+                </p>
+                <div class="preco">
+                    <strong>R$ 727.948,00</strong>
+                    <p class="a-partir">A partir de</p>
+                </div>
+                <button type="button">Adicionar ao Carrinho</button>
+            </li>
+            <li>
+                <img src="./img/Toyota.jpg" title="Carro Toyota">
+                <h4>Toyota Corolla 2025</h4>
+                <p>
+                    Veículo híbrido , sedan, 4 portas.
+                </p>
+                <div class="preco">
+                    <strong>R$ 199.990,00</strong>
+                    <p class="a-partir">A partir de</p>
+                </div>
+                <button type="button">Adicionar ao Carrinho</button>
+            </li>
+            <li>
+                <img src="./img/Peugeot.jpg" title="Carro Peugeot">
+                <h4>Peugeot 2008</h4>
+                <p>
+                    Veículo a combustão, SUV, 4 portas.
+                </p>
+                <div class="preco">
+                    <strong>R$ 122.490,00</strong>
+                    <p class="a-partir">A partir de</p>
+                </div>
+                <button type="button">Adicionar ao Carrinho</button>
+            </li>
+            <li>
+                <img src="./img/audi.jpg" title="Carro Audi">
+                <h4>Audi RS e-tron GT</h4>
+                <p>
+                    Veículo elétrico, super, 4 portas.
+                </p>
+                <div class="preco">
+                    <strong>R$ 949.990,00</strong>
+                    <p class="a-partir">A partir de</p>
+                </div>
+                <button type="button">Adicionar ao Carrinho</button>
+            </li>
+        </ul>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.botao-menu').click(function() {
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+header,
+body {
+    background-color: rgb(21, 21, 21);
+}
+
+.container  {
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    padding: 24px 0 0;
+    border-bottom: 1px solid #fff;
+    margin: 0 20px 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-weight: 400;
+    font-style: italic;
+    padding-bottom: 16px;
+}
+
+.container > a {
+    text-decoration: none;
+}
+
+.menu > li {
+    font-weight: 500;
+    color: rgb(219, 219, 219);
+    display: inline-flex;
+    list-style: none;
+    padding: 16px;
+    border-bottom: 8px solid transparent;
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    background-color: rgb(38, 38, 38);
+    border: 1px solid #fff;
+    position: absolute;
+    top: 115%;
+    left: 0;
+    width: 200px;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.menu li:hover {
+    cursor: pointer;
+    border-color: #fff;
+}
+
+.submenu li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(219, 219, 219);
+    font-size: 0.8em;
+}
+
+.menu li:hover,
+.submenu li a:hover {
+    color: rgb(159, 159, 159);
+}
+.submenu li {
+    list-style: none;
+    padding: 8px 12px;
+}
+
+h2 {
+    font-weight: 300;
+    padding-bottom: 16px;
+}
+
+h3,
+.novos > h2 {
+    font-weight: 300;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #fff;
+}
+
+.sobre article {
+    display: flex;
+    padding: 16px 16px 64px;
+}
+
+.sobre div {
+    padding: 16px;
+}
+
+.sobre p {
+    padding-top: 16px;
+}
+
+.sobre img {
+    width: 600px;
+    max-height: 380px;
+    padding: 4px;
+}
+
+
+.produtos img {
+    width: 400px;
+    max-width: 100%;
+    padding: 32px 0 8px;
+    max-height: 220px;
+    overflow-y: hidden;
+}
+
+.produtos li {
+    list-style: none;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.5%);
+    column-gap: 1%;
+}
+
+.preco {
+    padding: 8px 0;
+}
+
+.preco p {
+    color: rgb(161, 161, 161);
+    font-size: 0.7em;
+}
+
+.produtos button {
+    width: 335px;
+    padding: 8px;
+    background-color: rgb(31, 146, 31);
+    font-weight: 700;
+    margin-bottom: 24px;
+    border: none;
+}
+
+.produtos button:hover {
+    cursor: pointer;
+    background-color: rgb(30, 95, 30);
+}
+
+@media screen and (max-width: 640px) {
+    
+    .container {
+        max-width: 90%;
+    }
+
+    header .container {
+    display: block;
+    }
+
+    .menu,
+    .submenu li a {
+        font-size: 0.8em;
+    }
+
+    .menu li:hover,
+    .submenu li a:hover {
+        z-index: 1;
+    }
+
+    
+    .sobre img {
+        width: 100%;
+    }
+
+    .sobre p {
+        font-size: .9em;
+    }
+
+    h2 {
+        padding-left: 16px;
+    }
+
+    .sobre article {
+        display: block;
+    }
+
+    .produtos {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .botao-menu {
+        position: absolute;
+        width: 24px;
+        margin: 8px;
+        right: 10%;
+        top: 5%;
+    }
+
+    .botao-menu span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        margin-bottom: 2px;
+    }
+    
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    
+    .container {
+        max-width: 90%;
+    }
+
+    
+    .sobre img {
+    width: 100%;
+    }
+
+    
+
+    h2 {
+        padding-left: 16px;
+        font-size: 2em;
+    }
+
+    h3,
+    .sobre p{
+        font-size: 1.5em;
+    }
+
+    .sobre article {
+        display: block;
+    }
+
+    .produtos {
+        grid-template-columns: 49% 49%;
+        column-gap: 2%;
+    }
+}
